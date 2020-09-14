@@ -38,41 +38,36 @@
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minWidth="90dip"
-                android:minHeight="90dip"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:text="Play" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minWidth="90dip"
-                android:minHeight="90dip"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:text="End Turn" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minWidth="90dip"
-                android:minHeight="90dip"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:text="Trade 2" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minWidth="90dip"
-                android:minHeight="90dip"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:text="Trade 3" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minWidth="90dip"
-                android:minHeight="90dip"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:text="Trade 5" />
 
         </LinearLayout>
@@ -100,6 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="100dip"
+                    android:layout_marginBottom="10dp"
                     android:text="Player 2"/>
 
             </LinearLayout>
@@ -108,31 +104,48 @@
                 android:id="@+id/middle_of_table"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/marg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
                     android:minHeight="100dip"
                     android:text="Player 1" />
 
-                <Button
-                    android:layout_marginLeft="50dp"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/cardpile_and_deck"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="100dp"
-                    android:text="Card Pile"
-                    android:minHeight="100dip"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/customborder"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Deck"
-                    android:minHeight="100dip"
-                    android:layout_marginRight="50dp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginBottom="10dp"
+                        android:minHeight="100dip"
+                        android:text="Card Pile" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:minHeight="100dip"
+                        android:text="Deck" />
+                </LinearLayout>
 
                 <Button
                     android:id="@+id/player3_hand"
@@ -146,52 +159,53 @@
 
             <LinearLayout
                 android:id="@+id/your_hand"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
                 android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="35dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/button7"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:minWidth="60dip"
-                    android:minHeight="100dip"
+                    android:minHeight="130dip"
                     android:text="Defuse"
                     android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/button8"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:minHeight="100dip"
+                    android:minHeight="130dip"
                     android:text="Shuffle" />
 
                 <Button
                     android:id="@+id/button9"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:minHeight="100dip"
+                    android:minHeight="130dip"
                     android:text="Nope" />
 
                 <Button
                     android:id="@+id/button10"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:minHeight="100dip"
+                    android:minHeight="130dip"
                     android:text="Cat Card" />
 
                 <Button
                     android:id="@+id/button11"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:minHeight="100dip"
+                    android:minHeight="130dip"
                     android:text="Attack" />
             </LinearLayout>
 
