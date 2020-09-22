@@ -7,7 +7,7 @@ import android.view.SurfaceView;
 
 public class MainActivity extends AppCompatActivity {
 
-    SurfaceView cardView;
+    //SurfaceView cardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

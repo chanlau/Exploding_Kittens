@@ -11,13 +11,13 @@ import android.view.SurfaceView;
 
 public class drawCards extends SurfaceView {
 
-    private Paint magentaPaint = new Paint();
+    //private Paint magentaPaint = new Paint();
 
     public drawCards(Context context, AttributeSet attrs) {
         super(context, attrs);
         setWillNotDraw(false);
 
-        this.magentaPaint.setColor(Color.MAGENTA);
+        //this.magentaPaint.setColor(Color.MAGENTA);
     }
 
 
@@ -27,9 +27,9 @@ public class drawCards extends SurfaceView {
     public void onDraw(Canvas canvas) {
 
         //draw a favor card
-        Bitmap favorCard = BitmapFactory.decodeResource(getResources(), R.drawable.favorcard);
-        Bitmap resizedCard = Bitmap.createScaledBitmap(favorCard, 200, 300, true);
-        canvas.drawBitmap(resizedCard, 50.0f, 50.0f, null);
+        //Bitmap favorCard = BitmapFactory.decodeResource(getResources(), R.drawable.favorcard);
+        //Bitmap resizedCard = Bitmap.createScaledBitmap(favorCard, 200, 300, true);
+        //canvas.drawBitmap(resizedCard, 50.0f, 50.0f, null);
     }
 
 }
