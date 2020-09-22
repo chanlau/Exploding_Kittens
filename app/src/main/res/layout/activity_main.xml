@@ -8,10 +8,10 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    //<com.example.exploding_kittens.drawCards
+    <!--<com.example.exploding_kittens.drawCards
      />/   android:id="@+id/surfaceview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" />-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,24 +86,34 @@
             android:orientation="vertical">
 
 
-
-
             <LinearLayout
                 android:id="@+id/player2_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/player2_hand"
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Player 2" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#FFFFFF"
+                    android:maxHeight="120dip"
                     android:minHeight="100dip"
-                    android:layout_marginBottom="10dp"
-                    android:text="Player 2"/>
-
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/cardback"
+                    tools:srcCompat="@drawable/cardback" />
             </LinearLayout>
 
             <LinearLayout
@@ -114,14 +124,25 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/marg"
+                <TextView
+                    android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:minHeight="100dip"
-                    android:text="Player 1" />
+                    android:layout_weight="1"
+                    android:text="Player 3" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#FFFFFF"
+                    android:maxHeight="150dip"
+                    android:minHeight="130dip"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/cardback"
+                    tools:srcCompat="@drawable/cardback" />
 
                 <LinearLayout
                     android:id="@+id/cardpile_and_deck"
@@ -133,32 +154,62 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <Button
+                    <ImageButton
+                        android:id="@+id/imageButton2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="100dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="47dip"
+                        android:layout_marginRight ="47dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#FFFFFF"
+                        android:maxHeight="120dip"
                         android:minHeight="100dip"
-                        android:text="Card Pile" />
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/cardpile"
+                        tools:srcCompat="@drawable/cardpile" />
 
-                    <Button
+                    <ImageButton
+                        android:id="@+id/imageButton3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="50dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight ="47dip"
+                        android:layout_marginLeft="47dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#FFFFFF"
+                        android:maxHeight="120dip"
                         android:minHeight="100dip"
-                        android:text="Deck" />
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/cardback"
+                        tools:srcCompat="@drawable/cardback" />
+
+
                 </LinearLayout>
 
-                <Button
-                    android:id="@+id/player3_hand"
+                <ImageView
+                    android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:minHeight="100dip"
-                    android:text="Player 3" />
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#FFFFFF"
+                    android:maxHeight="150dip"
+                    android:minHeight="130dip"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/cardback"
+                    tools:src="@drawable/cardback" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Player 4" />
 
 
             </LinearLayout>
@@ -173,39 +224,6 @@
                 android:layout_marginRight="35dp"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Defuse"
-                    android:textColor="#000000" />
-
-                <Button
-                    android:id="@+id/button8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Shuffle" />
-
-                <Button
-                    android:id="@+id/button9"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Nope" />
-
-                <Button
-                    android:id="@+id/button10"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Cat Card" />
-
                 <ImageButton
                     android:id="@+id/button11"
                     android:layout_width="0dp"
@@ -213,10 +231,58 @@
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:background="#FFFFFF"
-                    android:minHeight="130dip"
+                    android:minHeight="100dip"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/attackCard"
+                    android:src="@drawable/explodingkittencard"
+                    android:text="EXPLODE!" />
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#FFFFFF"
+                    android:minHeight="100dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/shufflecard"
+                    android:text="Shuffle" />
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#FFFFFF"
+                    android:minHeight="100dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/skipcard"
+                    android:text="Skip" />
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#FFFFFF"
+                    android:minHeight="100dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/favorcard"
                     android:text="Attack" />
+
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#FFFFFF"
+                    android:minHeight="100dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/skipcard"
+                    android:text="Skip" />
             </LinearLayout>
 
         </LinearLayout>
