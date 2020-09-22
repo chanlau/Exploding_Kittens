@@ -8,10 +8,10 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    //<com.example.exploding_kittens.drawCards
+    <!--<com.example.exploding_kittens.drawCards
      />/   android:id="@+id/surfaceview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" />-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -173,39 +173,6 @@
                 android:layout_marginRight="35dp"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Defuse"
-                    android:textColor="#000000" />
-
-                <Button
-                    android:id="@+id/button8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Shuffle" />
-
-                <Button
-                    android:id="@+id/button9"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Nope" />
-
-                <Button
-                    android:id="@+id/button10"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Cat Card" />
-
                 <ImageButton
                     android:id="@+id/button11"
                     android:layout_width="0dp"
@@ -215,7 +182,55 @@
                     android:background="#FFFFFF"
                     android:minHeight="130dip"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/attackCard"
+                    android:src="@drawable/attackcard"
+                    android:text="Attack" />
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#FFFFFF"
+                    android:minHeight="130dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/beardcatcard"
+                    android:text="Attack" />
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#FFFFFF"
+                    android:minHeight="130dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cattermeloncard"
+                    android:text="Attack" />
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#FFFFFF"
+                    android:minHeight="130dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/favorcard"
+                    android:text="Attack" />
+
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#FFFFFF"
+                    android:minHeight="130dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/nopecard"
                     android:text="Attack" />
             </LinearLayout>
 
