@@ -8,6 +8,11 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    //<com.example.exploding_kittens.drawCards
+     />/   android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -168,11 +173,6 @@
                 android:layout_marginRight="35dp"
                 android:orientation="horizontal">
 
-                <com.example.exploding_kittens.drawCards
-                    android:id="@+id/surfaceview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent" />
-
                 <Button
                     android:id="@+id/button7"
                     android:layout_width="0dp"
@@ -206,12 +206,16 @@
                     android:minHeight="130dip"
                     android:text="Cat Card" />
 
-                <Button
+                <ImageButton
                     android:id="@+id/button11"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#FFFFFF"
                     android:minHeight="130dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/attackCard"
                     android:text="Attack" />
             </LinearLayout>
 
