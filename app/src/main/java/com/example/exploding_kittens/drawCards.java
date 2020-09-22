@@ -26,12 +26,10 @@ public class drawCards extends SurfaceView {
     @Override
     public void onDraw(Canvas canvas) {
 
-        canvas.drawCircle(100.0f, 100.0f, 50.0f, magentaPaint);
-
         //draw a favor card
         Bitmap favorCard = BitmapFactory.decodeResource(getResources(), R.drawable.favorcard);
         Bitmap resizedCard = Bitmap.createScaledBitmap(favorCard, 200, 300, true);
-        canvas.drawBitmap(resizedCard, 600.0f, 200.0f, magentaPaint);
+        canvas.drawBitmap(resizedCard, 50.0f, 50.0f, null);
     }
 
 }

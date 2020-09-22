@@ -8,11 +8,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.example.exploding_kittens.drawCards
-        android:id="@+id/surfaceview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -166,53 +161,50 @@
             <LinearLayout
                 android:id="@+id/your_hand"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="35dp"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Defuse"
-                    android:textColor="#000000" />
+                    android:adjustViewBounds="true"
+                    android:backgrounds
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-                <Button
-                    android:id="@+id/button8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Shuffle" />
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-                <Button
-                    android:id="@+id/button9"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Nope" />
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-                <Button
-                    android:id="@+id/button10"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Cat Card" />
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-                <Button
-                    android:id="@+id/button11"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:minHeight="130dip"
-                    android:text="Attack" />
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
             </LinearLayout>
 
         </LinearLayout>

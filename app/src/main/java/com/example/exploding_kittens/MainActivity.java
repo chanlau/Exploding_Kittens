@@ -15,5 +15,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         cardView = (SurfaceView) findViewById(R.id.surfaceview);
+        cardView.setBackgroundColor(0xffffff);
     }
 }
