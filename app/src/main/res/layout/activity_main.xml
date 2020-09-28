@@ -215,7 +215,7 @@
                     android:background="#FFFFFF"
                     android:minHeight="130dip"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/attackCard"
+                    android:src="@drawable/favorcard"
                     android:text="Attack" />
             </LinearLayout>
 
