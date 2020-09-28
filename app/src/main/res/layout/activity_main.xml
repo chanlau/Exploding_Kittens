@@ -71,6 +71,13 @@
                 android:layout_weight="1"
                 android:text="Trade 5" />
 
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Enter" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -219,6 +226,14 @@
                 android:layout_marginRight="35dp"
                 android:orientation="horizontal">
 
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="1dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="<" />
+
                 <ImageButton
                     android:id="@+id/button11"
                     android:layout_width="0dp"
@@ -278,6 +293,14 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/skipcard"
                     android:text="Skip" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="1dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text=">" />
             </LinearLayout>
 
         </LinearLayout>
