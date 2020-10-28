@@ -19,7 +19,7 @@ import com.example.exploding_kittens.actions.PlaySkipCard;
 import com.example.exploding_kittens.actions.Trade2;
 import com.example.exploding_kittens.actions.Trade3;
 import com.example.exploding_kittens.actions.Trade5;
-import com.example.exploding_kittens.players.Player;
+import com.example.exploding_kittens.Player;
 
 import java.util.ArrayList;
 import java.util.Collections;

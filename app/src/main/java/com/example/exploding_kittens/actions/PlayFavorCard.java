@@ -6,7 +6,7 @@
 
 package com.example.exploding_kittens.actions;
 
-import com.example.exploding_kittens.players.Player;
+import com.example.exploding_kittens.Player;
 
 public class PlayFavorCard extends CardAction {
     private Player target;

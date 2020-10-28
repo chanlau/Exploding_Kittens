@@ -1,4 +1,4 @@
-package com.example.exploding_kittens.setup;
+package com.example.exploding_kittens;
 
 import androidx.appcompat.app.AppCompatActivity;
 

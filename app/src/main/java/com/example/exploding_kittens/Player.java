@@ -4,7 +4,7 @@
  * Version: Project #d Final
  */
 
-package com.example.exploding_kittens.players;
+package com.example.exploding_kittens;
 
 import com.example.exploding_kittens.state.Card;
 
