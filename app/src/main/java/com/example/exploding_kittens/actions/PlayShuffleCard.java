@@ -6,7 +6,7 @@
 
 package com.example.exploding_kittens.actions;
 
-import com.example.exploding_kittens.Player;
+import Player.Player;
 
 public class PlayShuffleCard extends CardAction {
     public PlayShuffleCard(Player p){

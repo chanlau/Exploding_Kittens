@@ -1,6 +1,6 @@
 package com.example.exploding_kittens.actions;
 
-import com.example.exploding_kittens.Player;
+import Player.Player;
 
 public class Trade5 extends CardAction{
     private int PosC1, PosC2, PosC3, PosC4, PosC5, targetCardValue;
