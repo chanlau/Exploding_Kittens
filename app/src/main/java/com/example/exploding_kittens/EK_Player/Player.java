@@ -4,7 +4,7 @@
  * Version: Project #d Final
  */
 
-package Player;
+package com.example.exploding_kittens.EK_Player;
 
 import com.example.exploding_kittens.state.Card;
 

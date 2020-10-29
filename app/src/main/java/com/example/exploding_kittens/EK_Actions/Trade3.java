@@ -1,6 +1,6 @@
-package com.example.exploding_kittens.actions;
+package com.example.exploding_kittens.EK_Actions;
 
-import Player.Player;
+import com.example.exploding_kittens.EK_Player.Player;
 
 public class Trade3 extends CardAction{
     private Player targetPlayer;
