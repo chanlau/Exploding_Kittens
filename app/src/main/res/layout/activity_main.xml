@@ -227,7 +227,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button13"
+                    android:id="@+id/leftScroll"
                     android:layout_width="1dip"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -295,7 +295,7 @@
                     android:text="Skip" />
 
                 <Button
-                    android:id="@+id/button8"
+                    android:id="@+id/rightScroll"
                     android:layout_width="1dip"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
