@@ -1,8 +1,9 @@
-package com.example.exploding_kittens;
+package com.example.exploding_kittens.E_Kittens.EK_Player;
 
 import android.view.View;
 
-import java.util.ArrayList;
+import com.example.exploding_kittens.GameFramework.infoMessage.GameInfo;
+import com.example.exploding_kittens.GameFramework.GameMainActivity;
 
 public class ExplodingKittensHumanPlayer extends Player {
 
@@ -19,7 +20,7 @@ public class ExplodingKittensHumanPlayer extends Player {
 
 
     public View getTopView() {
-
+        return;
     }
 
     /**
@@ -43,7 +44,7 @@ public class ExplodingKittensHumanPlayer extends Player {
 
     }
 
-    public void setAsGui(GameActivity activity) {
+    public void setAsGui(GameMainActivity activity) {
 
     }
 

@@ -1,9 +1,8 @@
-package com.example.exploding_kittens;
+package com.example.exploding_kittens.E_Kittens.EK_Game;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.SurfaceView;
 
 import com.example.exploding_kittens.R;
 

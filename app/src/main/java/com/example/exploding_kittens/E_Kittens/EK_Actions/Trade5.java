@@ -1,6 +1,6 @@
-package com.example.exploding_kittens.EK_Actions;
+package com.example.exploding_kittens.E_Kittens.EK_Actions;
 
-import com.example.exploding_kittens.EK_Player.Player;
+import com.example.exploding_kittens.E_Kittens.EK_Player.Player;
 
 public class Trade5 extends CardAction{
     private int PosC1, PosC2, PosC3, PosC4, PosC5, targetCardValue;

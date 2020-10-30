@@ -4,22 +4,22 @@
  * Version: Project #d Final
  */
 
-package com.example.exploding_kittens.state;
+package com.example.exploding_kittens.E_Kittens.EK_State;
 
 import android.util.Log;
 
-import com.example.exploding_kittens.EK_Actions.CardAction;
-import com.example.exploding_kittens.EK_Actions.DrawCard;
-import com.example.exploding_kittens.EK_Actions.PlayAttackCard;
-import com.example.exploding_kittens.EK_Actions.PlayFavorCard;
-import com.example.exploding_kittens.EK_Actions.PlayFutureCard;
-import com.example.exploding_kittens.EK_Actions.PlayNopeCard;
-import com.example.exploding_kittens.EK_Actions.PlayShuffleCard;
-import com.example.exploding_kittens.EK_Actions.PlaySkipCard;
-import com.example.exploding_kittens.EK_Actions.Trade2;
-import com.example.exploding_kittens.EK_Actions.Trade3;
-import com.example.exploding_kittens.EK_Actions.Trade5;
-import com.example.exploding_kittens.EK_Player.Player;
+import com.example.exploding_kittens.E_Kittens.EK_Actions.CardAction;
+import com.example.exploding_kittens.E_Kittens.EK_Actions.DrawCard;
+import com.example.exploding_kittens.E_Kittens.EK_Actions.PlayAttackCard;
+import com.example.exploding_kittens.E_Kittens.EK_Actions.PlayFavorCard;
+import com.example.exploding_kittens.E_Kittens.EK_Actions.PlayFutureCard;
+import com.example.exploding_kittens.E_Kittens.EK_Actions.PlayNopeCard;
+import com.example.exploding_kittens.E_Kittens.EK_Actions.PlayShuffleCard;
+import com.example.exploding_kittens.E_Kittens.EK_Actions.PlaySkipCard;
+import com.example.exploding_kittens.E_Kittens.EK_Actions.Trade2;
+import com.example.exploding_kittens.E_Kittens.EK_Actions.Trade3;
+import com.example.exploding_kittens.E_Kittens.EK_Actions.Trade5;
+import com.example.exploding_kittens.E_Kittens.EK_Player.Player;
 
 import java.util.ArrayList;
 import java.util.Collections;

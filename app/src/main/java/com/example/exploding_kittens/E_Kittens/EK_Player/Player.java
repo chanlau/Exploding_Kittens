@@ -4,14 +4,17 @@
  * Version: Project #d Final
  */
 
-package com.example.exploding_kittens.EK_Player;
+package com.example.exploding_kittens.E_Kittens.EK_Player;
 
-import com.example.exploding_kittens.state.Card;
+import com.example.exploding_kittens.E_Kittens.EK_State.Card;
+import com.example.exploding_kittens.GameFramework.GamePlayer;
 
 import java.util.ArrayList;
 
-public class Player {
-    //Player class will signify what
+public class Player extends GamePlayer {
+    //variables that are necessary to be a player
+
+
     int playerNum;
     String playerName;
     ArrayList<Card> playerHand;
@@ -36,4 +39,6 @@ public class Player {
     }
     public String getPlayerName() {return this.playerName;}
     public ArrayList<Card> getPlayerHand() {return this.playerHand;}
+
+
 }

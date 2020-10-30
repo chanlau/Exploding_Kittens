@@ -1,4 +1,7 @@
-package com.example.exploding_kittens;
+package com.example.exploding_kittens.E_Kittens.EK_Player;
+
+import com.example.exploding_kittens.GameFramework.GameMainActivity;
+import com.example.exploding_kittens.GameFramework.infoMessage.GameInfo;
 
 public class ExplodingKittensComputerPlayer extends Player {
 

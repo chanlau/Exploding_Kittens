@@ -4,9 +4,9 @@
  * Version: Project #d Final
  */
 
-package com.example.exploding_kittens.EK_Actions;
+package com.example.exploding_kittens.E_Kittens.EK_Actions;
 
-import com.example.exploding_kittens.EK_Player.Player;
+import com.example.exploding_kittens.E_Kittens.EK_Player.Player;
 
 public class Trade2 extends CardAction{
     private Player targetPlayer;

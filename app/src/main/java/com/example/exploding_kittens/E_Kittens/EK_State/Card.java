@@ -4,7 +4,7 @@
  * Version: Project #d Final
  */
 
-package com.example.exploding_kittens.state;
+package com.example.exploding_kittens.E_Kittens.EK_State;
 
 public class Card {
     //create variables for the current player playing the card, the target player of the card
