@@ -7,6 +7,8 @@ import com.example.exploding_kittens.EK_Game.GameMainActivity;
 
 public class ExplodingKittensHumanPlayer extends GameHumanPlayer {
 
+    private GameMainActivity myActivity;
+
     /*
    //variables that are necessary to be a player
 
