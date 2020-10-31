@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import android.content.Context;
 
 import com.example.exploding_kittens.EK_Game.GameMainActivity;
-import com.example.exploding_kittens.EK_Game.GamePlayer;
+import com.example.exploding_kittens.EK_Player.GamePlayer;
 import com.example.exploding_kittens.EK_Player.ProxyPlayer;
 import com.example.exploding_kittens.EK_Game.utilities.Logger;
 

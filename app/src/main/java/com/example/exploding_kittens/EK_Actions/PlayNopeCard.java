@@ -6,12 +6,13 @@
 
 package com.example.exploding_kittens.EK_Actions;
 
+import com.example.exploding_kittens.EK_Player.GamePlayer;
 import com.example.exploding_kittens.EK_Player.Player;
 import com.example.exploding_kittens.actions.CardAction;
 
 public class PlayNopeCard extends CardAction {
 
-    public PlayNopeCard(Player player){
+    public PlayNopeCard(GamePlayer player){
         super(player);
     }
 }

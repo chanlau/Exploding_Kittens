@@ -6,7 +6,7 @@ import com.example.exploding_kittens.EK_Game.infoMessage.GameInfo;
 public class ExplodingKittensComputerPlayer extends GameComputerPlayer {
 
     public ExplodingKittensComputerPlayer(int num, String name) {
-        super(num, name);
+        super(name);
     }
 
     /**
@@ -34,4 +34,8 @@ public class ExplodingKittensComputerPlayer extends GameComputerPlayer {
 
     }
 
+    @Override
+    public void gameSetAsGui(GameMainActivity activity) {
+
+    }
 }
