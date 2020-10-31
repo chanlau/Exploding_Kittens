@@ -3,6 +3,7 @@ package com.example.exploding_kittens.EK_Player;
 import com.example.exploding_kittens.EK_Actions.actionMessage.GameAction;
 import com.example.exploding_kittens.EK_Game.Game;
 import com.example.exploding_kittens.EK_Game.GameMainActivity;
+import com.example.exploding_kittens.EK_Game.GamePlayer;
 import com.example.exploding_kittens.EK_Game.infoMessage.BindGameInfo;
 import com.example.exploding_kittens.EK_Game.infoMessage.GameInfo;
 import com.example.exploding_kittens.EK_Game.utilities.NetworkObjectPasser;
@@ -18,7 +19,7 @@ import com.example.exploding_kittens.EK_Game.utilities.Logger;
  * @author Steven R. Vegdahl
  * @version July 2013
  */
-public class ProxyPlayer implements GamePlayer {
+public class ProxyPlayer extends Player {
     //Tag for logging
     private static final String TAG = "ProxyPlayer";
 
@@ -39,7 +40,8 @@ public class ProxyPlayer implements GamePlayer {
      * @param portNum
      * 		the port number through which we connect to our client
      */
-    public ProxyPlayer(int portNum) {
+    public ProxyPlayer(int num, String name, int portNum) {
+        super(num, name);
 
         Logger.debugLog(TAG, "Creating Proxy Player");
 
