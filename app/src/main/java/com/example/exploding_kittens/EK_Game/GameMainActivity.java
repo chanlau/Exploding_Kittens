@@ -32,6 +32,7 @@ import com.example.exploding_kittens.EK_Game.gameConfiguration.GamePlayerType;
 import com.example.exploding_kittens.EK_Game.utilities.IPCoder;
 import com.example.exploding_kittens.EK_Game.utilities.Logger;
 import com.example.exploding_kittens.EK_Game.utilities.MessageBox;
+import com.example.exploding_kittens.EK_Player.GamePlayer;
 import com.example.exploding_kittens.R;
 
 /**

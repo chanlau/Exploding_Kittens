@@ -1,6 +1,6 @@
 package com.example.exploding_kittens.EK_Actions.actionMessage;
 
-import com.example.exploding_kittens.EK_Game.GamePlayer;
+import com.example.exploding_kittens.EK_Player.GamePlayer;
 
 /**
  * An action by which the player tells the game its name

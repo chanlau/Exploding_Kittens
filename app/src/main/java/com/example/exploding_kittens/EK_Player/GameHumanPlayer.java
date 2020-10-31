@@ -18,7 +18,6 @@ import com.example.exploding_kittens.EK_Game.infoMessage.StartGameInfo;
 import com.example.exploding_kittens.EK_Game.infoMessage.TimerInfo;
 import com.example.exploding_kittens.EK_Game.Game;
 import com.example.exploding_kittens.EK_Game.GameMainActivity;
-import com.example.exploding_kittens.EK_Game.GamePlayer;
 import com.example.exploding_kittens.EK_Game.utilities.GameTimer;
 import com.example.exploding_kittens.EK_Game.utilities.Logger;
 import com.example.exploding_kittens.EK_Game.utilities.MessageBox;
@@ -36,7 +35,7 @@ import com.example.exploding_kittens.EK_Game.utilities.Tickable;
  * @version July 2013
  *
  */
-public abstract class GameHumanPlayer implements GamePlayer, Tickable {
+public abstract class GameHumanPlayer extends Player implements Tickable {
     //Tag for logging
     private static final String TAG = "GameHumanPlayer";
     /**

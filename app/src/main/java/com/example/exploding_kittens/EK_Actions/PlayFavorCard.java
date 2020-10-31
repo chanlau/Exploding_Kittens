@@ -6,19 +6,19 @@
 
 package com.example.exploding_kittens.EK_Actions;
 
-import com.example.exploding_kittens.EK_Player.Player;
+import com.example.exploding_kittens.EK_Player.GamePlayer;
 
 public class PlayFavorCard extends CardAction {
-    private Player target;
+    private GamePlayer target;
     private int choice;
 
-    public PlayFavorCard(Player p, Player t, int c){
+    public PlayFavorCard(GamePlayer p, GamePlayer t, int c){
         super(p);
         this.target = t;
         this.choice = c;
     }
 
-    public Player getTarget(){
+    public GamePlayer getTarget(){
         return this.target;
     }
     public int getChoice() {return this.choice;}

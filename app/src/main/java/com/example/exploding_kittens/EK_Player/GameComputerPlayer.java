@@ -10,7 +10,6 @@ import com.example.exploding_kittens.EK_Game.infoMessage.StartGameInfo;
 import com.example.exploding_kittens.EK_Game.infoMessage.TimerInfo;
 import com.example.exploding_kittens.EK_Game.Game;
 import com.example.exploding_kittens.EK_Game.GameMainActivity;
-import com.example.exploding_kittens.EK_Game.GamePlayer;
 import com.example.exploding_kittens.EK_Game.utilities.GameTimer;
 import com.example.exploding_kittens.EK_Game.utilities.Logger;
 import com.example.exploding_kittens.EK_Game.utilities.MessageBox;
@@ -28,7 +27,7 @@ import android.os.Looper;
  * @author Andrew Nuxoll
  * @version July 2013
  */
-public abstract class GameComputerPlayer implements GamePlayer, Tickable {
+public abstract class GameComputerPlayer extends Player implements Tickable {
     //Tag for logging
     private static final String TAG = "GameComputerPlayer";
     /**

@@ -1,8 +1,10 @@
 package com.example.exploding_kittens.EK_Game;
 
 import com.example.exploding_kittens.EK_Actions.actionMessage.GameAction;
+import com.example.exploding_kittens.EK_Player.GamePlayer;
 
 public class EK_LocalGame extends LocalGame {
+
     @Override
     protected void sendUpdatedStateTo(GamePlayer p) {
     }

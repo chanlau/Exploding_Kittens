@@ -1,11 +1,11 @@
 package com.example.exploding_kittens.EK_Actions;
 
-import com.example.exploding_kittens.EK_Player.Player;
+import com.example.exploding_kittens.EK_Player.GamePlayer;
 
 public class Trade5 extends CardAction{
     private int PosC1, PosC2, PosC3, PosC4, PosC5, targetCardValue;
 
-    public Trade5(Player p, int c1, int c2, int c3, int c4, int c5, int targ) {
+    public Trade5(GamePlayer p, int c1, int c2, int c3, int c4, int c5, int targ) {
         super(p);
         this.PosC1 = c1;
         this.PosC2 = c2;

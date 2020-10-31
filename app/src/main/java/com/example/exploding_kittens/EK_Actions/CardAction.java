@@ -1,6 +1,6 @@
 package com.example.exploding_kittens.EK_Actions;
 
-import com.example.exploding_kittens.EK_Game.GamePlayer;
+import com.example.exploding_kittens.EK_Player.GamePlayer;
 import com.example.exploding_kittens.EK_Actions.actionMessage.GameAction;
 
 public class CardAction extends GameAction{

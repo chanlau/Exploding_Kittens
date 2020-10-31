@@ -6,13 +6,13 @@
 
 package com.example.exploding_kittens.EK_Actions;
 
-import com.example.exploding_kittens.EK_Player.Player;
+import com.example.exploding_kittens.EK_Player.GamePlayer;
 
 public class Trade2 extends CardAction{
-    private Player targetPlayer;
+    private GamePlayer targetPlayer;
     private int PosC1, PosC2;
 
-    public Trade2(Player p, Player t, int c1, int c2){
+    public Trade2(GamePlayer p, GamePlayer t, int c1, int c2){
         super(p);
         this.targetPlayer = t;
         this.PosC1 = c1;
@@ -20,7 +20,7 @@ public class Trade2 extends CardAction{
     }
 
     //Getter methods for all of the instance variables
-    public Player getTarget(){
+    public GamePlayer getTarget(){
         return targetPlayer;
     }
     public int getPosC1(){return PosC1;}

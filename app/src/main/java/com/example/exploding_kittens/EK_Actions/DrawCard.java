@@ -1,9 +1,9 @@
 package com.example.exploding_kittens.EK_Actions;
 
-import com.example.exploding_kittens.EK_Player.Player;
+import com.example.exploding_kittens.EK_Player.GamePlayer;
 
 public class DrawCard extends CardAction {
-     public DrawCard(Player p) {
+     public DrawCard(GamePlayer p) {
         super(p);
     }
 }

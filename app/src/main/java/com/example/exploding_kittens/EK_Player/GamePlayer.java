@@ -1,6 +1,7 @@
-package com.example.exploding_kittens.EK_Game;
+package com.example.exploding_kittens.EK_Player;
 
 import com.example.exploding_kittens.EK_Game.infoMessage.GameInfo;
+import com.example.
 
 /**
  * A player who plays a (generic) game. Each class that implements a player for

@@ -2,7 +2,7 @@ package com.example.exploding_kittens.EK_Actions.actionMessage;
 
 
 import java.io.Serializable;
-import com.example.exploding_kittens.EK_Game.GamePlayer;
+import com.example.exploding_kittens.EK_Player.GamePlayer;
 
 /**
  * An action for a generic game.  A game action is something that a player
