@@ -15,9 +15,12 @@ import com.example.exploding_kittens.EK_Game.utilities.GameTimer;
 import com.example.exploding_kittens.EK_Game.utilities.Logger;
 import com.example.exploding_kittens.EK_Game.utilities.MessageBox;
 import com.example.exploding_kittens.EK_Game.utilities.Tickable;
+import com.example.exploding_kittens.EK_State.Card;
 
 import android.os.Handler;
 import android.os.Looper;
+
+import java.util.ArrayList;
 
 /**
  * An abstract computerized game player player. This is an abstract class, that
@@ -28,7 +31,7 @@ import android.os.Looper;
  * @author Andrew Nuxoll
  * @version July 2013
  */
-public abstract class GameComputerPlayer implements GamePlayer, Tickable {
+public abstract class GameComputerPlayer extends Player implements Tickable {
     //Tag for logging
     private static final String TAG = "GameComputerPlayer";
     /**
@@ -44,6 +47,9 @@ public abstract class GameComputerPlayer implements GamePlayer, Tickable {
     private GameMainActivity myActivity; // the game's main activity, set only
     // this game is connected to the GUI
     private GameTimer myTimer = new GameTimer(this); // my timer
+
+    ArrayList<Card> playerHand;
+
 
     /**
      * Returns this game's timer.
@@ -82,9 +88,12 @@ public abstract class GameComputerPlayer implements GamePlayer, Tickable {
      * @param name
      * 			the player's name (e.g., "John")
      */
-    public GameComputerPlayer(String name) {
-        this.name = name;
+    public GameComputerPlayer(int num, String name) {
+        super(num, name);
+
     }
+
+
 
     /**
      * Sets this player to be the one connected to the GUI.

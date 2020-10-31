@@ -23,6 +23,9 @@ import com.example.exploding_kittens.EK_Game.utilities.GameTimer;
 import com.example.exploding_kittens.EK_Game.utilities.Logger;
 import com.example.exploding_kittens.EK_Game.utilities.MessageBox;
 import com.example.exploding_kittens.EK_Game.utilities.Tickable;
+import com.example.exploding_kittens.EK_State.Card;
+
+import java.util.ArrayList;
 
 /**
  * class GameHumanPlayer
@@ -36,7 +39,7 @@ import com.example.exploding_kittens.EK_Game.utilities.Tickable;
  * @version July 2013
  *
  */
-public abstract class GameHumanPlayer implements GamePlayer, Tickable {
+public abstract class GameHumanPlayer extends Player implements Tickable {
     //Tag for logging
     private static final String TAG = "GameHumanPlayer";
     /**
@@ -52,24 +55,19 @@ public abstract class GameHumanPlayer implements GamePlayer, Tickable {
     private GameTimer myTimer = new GameTimer(this); // my player's timer
     private boolean gameOver; // whether the game is over
 
+    ArrayList<Card> playerHand;
+
     /**
      * constructor
      *
      * @param name the name of the player
      */
 
-    public GameHumanPlayer(String name) {
+    public GameHumanPlayer(int num, String name) {
         // set the name via the argument
-
-        this.name = name;
-
-        // mark game as not being over
-        this.gameOver = false;
-
-        // get new handler for this thread
-        this.myHandler = new Handler();
-        this.saveMe = new Handler();
+        super(num, name);
     }
+
 
     /**
      * Returns this object's game timer

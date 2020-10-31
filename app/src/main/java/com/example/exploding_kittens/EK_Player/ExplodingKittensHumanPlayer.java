@@ -51,7 +51,7 @@ public class ExplodingKittensHumanPlayer extends GameHumanPlayer {
 
 
     public View getTopView() {
-        return ;
+        return null;
     }
 
     /**
@@ -60,7 +60,7 @@ public class ExplodingKittensHumanPlayer extends GameHumanPlayer {
      * @param info
      *     information, presumably the gamestate
      */
-    protected void receiveInfo(GameInfo info) {
+    public void receiveInfo(GameInfo info) {
 
     }
 

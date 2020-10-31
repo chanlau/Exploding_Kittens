@@ -1,6 +1,7 @@
 package com.example.exploding_kittens.EK_Game;
 
 import com.example.exploding_kittens.EK_Game.infoMessage.GameInfo;
+import com.example.exploding_kittens.EK_Player.GameHumanPlayer;
 
 /**
  * A player who plays a (generic) game. Each class that implements a player for
@@ -12,6 +13,7 @@ import com.example.exploding_kittens.EK_Game.infoMessage.GameInfo;
  */
 
 public interface GamePlayer {
+
 
     // sets this player as the GUI player (implemented as final in the
     // major player classes)
@@ -32,5 +34,7 @@ public interface GamePlayer {
 
     // whether this player supports a GUI
     public boolean supportsGui();
+
+
 
 }// interface GamePlayer

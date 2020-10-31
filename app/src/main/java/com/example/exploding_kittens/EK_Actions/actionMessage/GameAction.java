@@ -3,6 +3,7 @@ package com.example.exploding_kittens.EK_Actions.actionMessage;
 
 import java.io.Serializable;
 import com.example.exploding_kittens.EK_Game.GamePlayer;
+import com.example.exploding_kittens.EK_Player.Player;
 
 /**
  * An action for a generic game.  A game action is something that a player
@@ -28,7 +29,7 @@ public abstract class GameAction implements Serializable {
     private static final long serialVersionUID = 30672013L;
 
     // the player who generated the request
-    private GamePlayer player;
+    private Player player;
 
     /**
      * constructor for GameAction
@@ -36,7 +37,7 @@ public abstract class GameAction implements Serializable {
      * @param player
      * 		the player who created the action
      */
-    public GameAction(GamePlayer player) {
+    public GameAction(Player player) {
         this.player = player;
     }
 
@@ -46,7 +47,7 @@ public abstract class GameAction implements Serializable {
      * @return the player who created the action
      *
      */
-    public GamePlayer getPlayer() {
+    public Player getPlayer() {
         return player;
     }
 
@@ -56,7 +57,7 @@ public abstract class GameAction implements Serializable {
      * @param p
      * 		the new player to which the action is to be associated
      */
-    public void setPlayer(GamePlayer p) {
+    public void setPlayer(Player p) {
         this.player = p;
     }
 }

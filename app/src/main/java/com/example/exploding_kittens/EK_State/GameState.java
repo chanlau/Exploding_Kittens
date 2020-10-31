@@ -20,6 +20,10 @@ import com.example.exploding_kittens.EK_Actions.Trade2;
 import com.example.exploding_kittens.EK_Actions.Trade3;
 import com.example.exploding_kittens.EK_Actions.Trade5;
 import com.example.exploding_kittens.EK_Player.Player;
+import com.example.exploding_kittens.EK_Player.GameComputerPlayer;
+import com.example.exploding_kittens.EK_Player.GameHumanPlayer;
+
+
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -458,6 +462,7 @@ public class GameState {
         }
 
     }
+
 
     public void addPlayer(Player p) {
         players.add(p);
