@@ -1,8 +1,9 @@
 package com.example.exploding_kittens.EK_Actions;
 
 import com.example.exploding_kittens.EK_Player.Player;
+import com.example.exploding_kittens.actions.CardAction;
 
-public class Trade3 extends CardAction{
+public class Trade3 extends CardAction {
     private Player targetPlayer;
     private int PosC1, PosC2, PosC3, targetCardValue;
 

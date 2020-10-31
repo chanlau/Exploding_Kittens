@@ -3,6 +3,7 @@ package com.example.exploding_kittens.EK_Actions.actionMessage;
 import java.io.Serializable;
 
 import com.example.exploding_kittens.EK_Game.GamePlayer;
+import com.example.exploding_kittens.EK_Player.Player;
 
 
 public class EndTurnAction extends GameAction implements Serializable {
@@ -12,7 +13,7 @@ public class EndTurnAction extends GameAction implements Serializable {
     //Long for network play - changed the number before the L to a 6 instead of a 7.
     private static final long serialVersionUID = 3067264564645016L;
 
-    public EndTurnAction(GamePlayer player){
+    public EndTurnAction(Player player){
         super(player);
     }
 }

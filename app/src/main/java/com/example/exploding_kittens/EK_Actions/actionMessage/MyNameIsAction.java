@@ -1,6 +1,7 @@
 package com.example.exploding_kittens.EK_Actions.actionMessage;
 
 import com.example.exploding_kittens.EK_Game.GamePlayer;
+import com.example.exploding_kittens.EK_Player.Player;
 
 /**
  * An action by which the player tells the game its name
@@ -25,7 +26,7 @@ public class MyNameIsAction extends GameAction {
      * @param name
      * 		the player's name
      */
-    public MyNameIsAction(GamePlayer p, String name) {
+    public MyNameIsAction(Player p, String name) {
         super(p); // invoke superclass constructor
         this.name = name; // set the name
     }

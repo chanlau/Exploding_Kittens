@@ -1,6 +1,7 @@
 package com.example.exploding_kittens.EK_Actions.actionMessage;
 
 import com.example.exploding_kittens.EK_Game.GamePlayer;
+import com.example.exploding_kittens.EK_Player.Player;
 
 /**
  * An action by which the player tells the game its name
@@ -20,7 +21,7 @@ public class ReadyAction extends GameAction {
      * @param p
      * 		the player who sent the action
      */
-    public ReadyAction(GamePlayer p) {
+    public ReadyAction(Player p) {
         super(p);
     }
 }

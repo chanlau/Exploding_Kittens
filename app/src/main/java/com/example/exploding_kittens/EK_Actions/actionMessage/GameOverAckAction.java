@@ -1,6 +1,7 @@
 package com.example.exploding_kittens.EK_Actions.actionMessage;
 
 import com.example.exploding_kittens.EK_Game.GamePlayer;
+import com.example.exploding_kittens.EK_Player.Player;
 
 /**
  * An action by which the player acknowledges that the game is over.
@@ -20,7 +21,7 @@ public class GameOverAckAction extends GameAction {
      * @param p
      * 		the player to sent the action
      */
-    public GameOverAckAction(GamePlayer p) {
+    public GameOverAckAction(Player p) {
         super(p);
     }
 }
