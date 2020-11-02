@@ -16,7 +16,7 @@ public class Card {
     }
 
     public Card(Card orig) {
-        this(orig.getCardType());
+        this.cardType = orig.getCardType();
     }
 
     public int getCardType() {
