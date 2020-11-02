@@ -8,6 +8,7 @@ package com.example.exploding_kittens.EK_State;
 
 import android.util.Log;
 
+import com.example.exploding_kittens.EK_Actions.CardAction;
 import com.example.exploding_kittens.EK_Actions.DrawCard;
 import com.example.exploding_kittens.EK_Actions.PlayAttackCard;
 import com.example.exploding_kittens.EK_Actions.PlayFavorCard;
@@ -19,9 +20,9 @@ import com.example.exploding_kittens.EK_Actions.Trade2;
 import com.example.exploding_kittens.EK_Actions.Trade3;
 import com.example.exploding_kittens.EK_Actions.Trade5;
 import com.example.exploding_kittens.EK_Player.Player;
-import com.example.exploding_kittens.EK_Player.GameComputerPlayer;
-import com.example.exploding_kittens.EK_Player.GameHumanPlayer;
-import com.example.exploding_kittens.actions.CardAction;
+//import com.example.exploding_kittens.EK_Player.GameComputerPlayer;
+//import com.example.exploding_kittens.EK_Player.GameHumanPlayer;
+//import com.example.exploding_kittens.actions.CardAction;
 
 
 import java.util.ArrayList;

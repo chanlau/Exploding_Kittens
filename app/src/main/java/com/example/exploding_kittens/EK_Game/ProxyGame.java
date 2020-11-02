@@ -8,6 +8,7 @@ import com.example.exploding_kittens.EK_Game.infoMessage.GameInfo;
 import com.example.exploding_kittens.EK_Game.utilities.IPCoder;
 import com.example.exploding_kittens.EK_Game.utilities.NetworkObjectPasser;
 import com.example.exploding_kittens.EK_Game.utilities.Logger;
+import com.example.exploding_kittens.EK_Player.Player;
 
 /**
  * A Game object that is used as a proxy for the real game that is on another
@@ -25,7 +26,7 @@ public class ProxyGame implements Game {
     private static final String TAG = "ProxyGame";
 
     // the player associated with this game
-    private GamePlayer player;
+    private Player player;
 
     // a queue of objects that are collected, which might have been sent over the
     // network before we are connected to a player
@@ -118,6 +119,7 @@ public class ProxyGame implements Game {
         };
     }
 
+
     /**
      * Method used by player to send an action to this Game object.
      *
@@ -136,7 +138,7 @@ public class ProxyGame implements Game {
      * Starts the game. In this context, we know that the array will
      * contain exactly one player.
      */
-    public void start(GamePlayer[] players) {
+    public void start(Player[] players) {
         Logger.debugLog(TAG, "Starting");
 
         // if player has already been bound, ignore

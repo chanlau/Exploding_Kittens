@@ -14,6 +14,7 @@ import com.example.exploding_kittens.EK_Game.infoMessage.StartGameInfo;
 import com.example.exploding_kittens.EK_Game.utilities.GameTimer;
 import com.example.exploding_kittens.EK_Game.utilities.Tickable;
 import com.example.exploding_kittens.EK_Game.utilities.Logger;
+import com.example.exploding_kittens.EK_Player.Player;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -43,7 +44,7 @@ public abstract class LocalGame implements Game, Tickable {
     private Handler myHandler;
 
     // the players in the game, in order of  player number
-    protected GamePlayer[] players;
+    protected Player[] players;
 
     // whether the game's thread is running
     private boolean running = false;
@@ -85,12 +86,12 @@ public abstract class LocalGame implements Game, Tickable {
      * @param players
      * 			the list of players who are playing in the game
      */
-    public void start(GamePlayer[] players) {
+    public void start(Player[] players) {
         // if the game has already started, don't restart
         if (this.players != null) return;
 
         // create/store a copy of the player array
-        this.players = (GamePlayer[])players.clone();
+        this.players = (Player[])players.clone();
 
         // create an array for the players' names; these names will be
         // filled during the initial message-protocol between the game
@@ -137,7 +138,7 @@ public abstract class LocalGame implements Game, Tickable {
      * @param p
      * 			the player to notify
      */
-    protected abstract void sendUpdatedStateTo(GamePlayer p);
+    protected abstract void sendUpdatedStateTo(Player p);
 
 
     /**
@@ -145,7 +146,7 @@ public abstract class LocalGame implements Game, Tickable {
      * calls the 'notifyStateChanged' method for each player.
      */
     protected final void sendAllUpdatedState() {
-        for (GamePlayer p : players) {
+        for (Player p : players) {
             sendUpdatedStateTo(p);
         }
     }
@@ -157,7 +158,7 @@ public abstract class LocalGame implements Game, Tickable {
      * @return
      * 			the player's ID, or -1 if the player is not a player in this game
      */
-    protected final int getPlayerIdx(GamePlayer p) {
+    protected final int getPlayerIdx(Player p) {
         for (int i = 0; i < players.length; i++) {
             if (p == players[i]) {
                 return i;
@@ -203,7 +204,7 @@ public abstract class LocalGame implements Game, Tickable {
                     Logger.debugLog(TAG, "broadcasting player names");
                     gameStage = GameStage.WAITING_FOR_READY;
                     playersReady = new boolean[players.length]; // array to keep track of players responding
-                    for (GamePlayer p : players) {
+                    for (Player p : players) {
                         p.sendInfo(
                                 new StartGameInfo((String[])playerNames.clone()));
                     }
@@ -287,7 +288,7 @@ public abstract class LocalGame implements Game, Tickable {
     private final void checkAndHandleAction(GameAction action) {
 
         // get the player and player ID
-        GamePlayer player = action.getPlayer();
+        Player player = action.getPlayer();
         int playerId = getPlayerIdx(player);
 
         // if the player is NOT a player who is presently allowed to
@@ -368,7 +369,7 @@ public abstract class LocalGame implements Game, Tickable {
         playerFinishedCount = 0;
 
         // send all players a "game over" message
-        for (GamePlayer p : players) {
+        for (Player p : players) {
             p.sendInfo(new GameOverInfo(msg));
         }
     }
