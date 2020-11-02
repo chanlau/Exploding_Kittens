@@ -6,10 +6,10 @@
 
 package com.example.exploding_kittens.EK_Actions;
 
+import com.example.exploding_kittens.EK_Actions.actionMessage.GameAction;
 import com.example.exploding_kittens.EK_Player.Player;
-import com.example.exploding_kittens.actions.CardAction;
 
-public class Trade2 extends CardAction {
+public class Trade2 extends GameAction {
     private Player targetPlayer;
     private int PosC1, PosC2;
 
