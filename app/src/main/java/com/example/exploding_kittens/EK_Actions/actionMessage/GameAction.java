@@ -2,8 +2,9 @@ package com.example.exploding_kittens.EK_Actions.actionMessage;
 
 
 import java.io.Serializable;
-import com.example.exploding_kittens.EK_Game.GamePlayer;
+
 import com.example.exploding_kittens.EK_Player.Player;
+import com.example.exploding_kittens.EK_Player.ProxyPlayer;
 
 /**
  * An action for a generic game.  A game action is something that a player
@@ -57,7 +58,7 @@ public abstract class GameAction implements Serializable {
      * @param p
      * 		the new player to which the action is to be associated
      */
-    public void setPlayer(Player p) {
+    public void setPlayer(ProxyPlayer p) {
         this.player = p;
     }
 }
