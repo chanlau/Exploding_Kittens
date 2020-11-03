@@ -8,7 +8,6 @@ package com.example.exploding_kittens.EK_State;
 
 import android.util.Log;
 
-import com.example.exploding_kittens.EK_Actions.CardAction;
 import com.example.exploding_kittens.EK_Actions.DrawCard;
 import com.example.exploding_kittens.EK_Actions.PlayAttackCard;
 import com.example.exploding_kittens.EK_Actions.PlayFavorCard;
@@ -19,11 +18,9 @@ import com.example.exploding_kittens.EK_Actions.PlaySkipCard;
 import com.example.exploding_kittens.EK_Actions.Trade2;
 import com.example.exploding_kittens.EK_Actions.Trade3;
 import com.example.exploding_kittens.EK_Actions.Trade5;
+import com.example.exploding_kittens.EK_Game.infoMessage.GameState;
 import com.example.exploding_kittens.EK_Player.Player;
-//import com.example.exploding_kittens.EK_Player.GameComputerPlayer;
-//import com.example.exploding_kittens.EK_Player.GameHumanPlayer;
-//import com.example.exploding_kittens.actions.CardAction;
-
+import com.example.exploding_kittens.actions.CardAction;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -31,7 +28,11 @@ import java.util.Random;
 
 import static java.sql.Types.NULL;
 
-public class GameState {
+//import com.example.exploding_kittens.EK_Player.GameComputerPlayer;
+//import com.example.exploding_kittens.EK_Player.GameHumanPlayer;
+//import com.example.exploding_kittens.actions.CardAction;
+
+public class ExplodingKittensGameState extends GameState {
     /**
      * External Citation
      * Date: 20 October 2020
@@ -46,7 +47,7 @@ public class GameState {
      * array lists
      */
     //instance variables
-    GameState previous = null;
+    ExplodingKittensGameState previous = null;
     ArrayList<Card> discardPile;
     ArrayList<Card> deck;
     ArrayList<Player> players;
@@ -55,7 +56,7 @@ public class GameState {
 
 
     //constructor
-    public GameState() {
+    public ExplodingKittensGameState() {
         this.discardPile = new ArrayList<Card>();
         this.deck = new ArrayList<Card>();
         this.players = new ArrayList<Player>();
@@ -64,7 +65,7 @@ public class GameState {
     }
 
     //constructor to copy the given gamestate
-    public GameState(GameState gamestate) {
+    public ExplodingKittensGameState(ExplodingKittensGameState gamestate) {
         /**
          * External Citation
          * Date: 8 October 2020
