@@ -28,17 +28,13 @@ public class EK_LocalGame extends LocalGame {
     EKGameState currState;
 
     @Override
-    protected void sendUpdatedStateTo(Player p) {
-    }
-
-    @Override
     protected boolean canMove(int playerIdx) {
-        return false;
-    }
-
-    @Override
-    protected String checkIfGameOver() {
-        return null;
+        if(playerIdx == currState.getWhoseTurn()){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     @Override
@@ -84,10 +80,17 @@ public class EK_LocalGame extends LocalGame {
         return false;
     }
 
-    @Override
-    public void start(Player[] players) {
 
+    @Override
+    protected void sendUpdatedStateTo(Player p) {
     }
+
+
+    @Override
+    protected String checkIfGameOver() {
+        return null;
+    }
+
 
     /****************************************************************************
      * Card Methods
