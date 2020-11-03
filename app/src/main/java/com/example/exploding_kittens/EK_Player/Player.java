@@ -7,7 +7,6 @@
 package com.example.exploding_kittens.EK_Player;
 
 import com.example.exploding_kittens.EK_Game.GameMainActivity;
-import com.example.exploding_kittens.EK_Game.GamePlayer;
 import com.example.exploding_kittens.EK_Game.infoMessage.GameInfo;
 import com.example.exploding_kittens.EK_State.Card;
 
