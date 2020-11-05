@@ -7,11 +7,12 @@
 package com.example.exploding_kittens.EK_State;
 
 
+import com.example.exploding_kittens.EK_Game.infoMessage.GameState;
 import com.example.exploding_kittens.EK_Player.Player;
 import com.example.exploding_kittens.EK_State.Card;
 import java.util.ArrayList;
 
-public class EKGameState {
+public class EKGameState extends GameState {
     /**
      * External Citation
      * Date: 20 October 2020
@@ -94,6 +95,16 @@ public class EKGameState {
                 + "\n Cards to Draw Counter" + cardsToDrawString + "\n Players:" + Player0String + "\n Player 1 Hand:" +
                 Player0String + "\n Player 2 Hand: " + Player1String + "\n Player 3 Hand" + Player2String +
                 "\n Player 4 Hand: " + Player3String);
+    }
+
+    //Remove player method
+    //Removes a selected player from the game
+    public void removePlayer(Player p){
+        for(int i = 0; i < players.size(); i++){
+            if(p.getPlayerNum() == players.get(i).getPlayerNum()){
+                players.remove(i);
+            }
+        }
     }
 
    //Getters and Setters
