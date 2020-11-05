@@ -7,11 +7,12 @@
 package com.example.exploding_kittens.EK_State;
 
 
+import com.example.exploding_kittens.EK_Game.infoMessage.GameState;
 import com.example.exploding_kittens.EK_Player.Player;
 import com.example.exploding_kittens.EK_State.Card;
 import java.util.ArrayList;
 
-public class EKGameState {
+public class EKGameState extends GameState {
     /**
      * External Citation
      * Date: 20 October 2020
