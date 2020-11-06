@@ -136,7 +136,6 @@ public class EKGameState extends GameState {
 
     public void setCardsToDraw(int i){ this.cardsToDraw = i;}
 
-
 }
 
 

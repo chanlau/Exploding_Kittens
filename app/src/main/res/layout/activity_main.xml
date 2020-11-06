@@ -243,7 +243,7 @@
                     android:adjustViewBounds="true"
                     android:background="#FFFFFF"
                     android:minHeight="100dip"
-                    android:scaleType="fitCenter"
+                    android:scaleType="center"
                     android:src="@drawable/explodingkittencard"
                     android:text="EXPLODE!" />
 

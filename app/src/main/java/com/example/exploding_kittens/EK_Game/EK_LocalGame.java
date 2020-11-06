@@ -28,9 +28,9 @@ import static java.sql.Types.NULL;
 public class EK_LocalGame extends LocalGame {
 
     //Instance variable representing the real current state of the game
-    EKGameState currState;
+    private EKGameState currState;
     //Instance variable representing the previous state of the game
-    EKGameState previousState;
+    private EKGameState previousState;
 
     public EK_LocalGame() {
         this.currState = new EKGameState();
@@ -130,17 +130,17 @@ public class EK_LocalGame extends LocalGame {
      * Nope
      * Favor
      * SeeTheFuture
-     * Shuffle
-     * Skip
-     * Defuse
-     * drawCard
+     * Shuffle*
+     * Skip*
+     * Defuse*
+     * drawCard*
      * Trade2
      * Trade3
      * Trade5
      * nextTurn
      * checkCard
-     * populateDeck
-     * populateDefuseExplode
+     * populateDeck*
+     * populateDefuseExplode*
      * makeTestHand
      ***************************************************************************/
     //Attack card
@@ -384,14 +384,15 @@ public class EK_LocalGame extends LocalGame {
                 currState.getDeck().add(new Card(i));
             }
         }
+        //Collections.shuffle(this.currState.getDeck());
 
     }
 
     //adds defuse and explode cards to deck
     public void populateDefuseExplode() {
         int i;
-        //puts 3 Exploding Kittens into deck
-        for (i = 0; i < 3; i++) {
+        //puts Exploding Kittens into deck
+        for (i = 0; i < this.currState.getPlayers().size(); i++) {
             currState.getDeck().add(new Card(0));
         }
 
@@ -433,6 +434,8 @@ public class EK_LocalGame extends LocalGame {
 
     }
 
-
+    public EKGameState getCurrState(){
+        return this.currState;
+    }
 
 }
